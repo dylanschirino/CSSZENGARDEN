@@ -1,0 +1,54 @@
+/* CSSZENGARDEN
+*
+* /sass/object/firstsection.scss - NON Design of the First Section THE ROAD TO ENLIGHTMENT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.preamble{
+  & p{
+    margin-right:10em;
+  }
+  & h3{
+    position:absolute;
+    left:148px;
+    bottom:60px;
+    width:1.5em;
+  }
+}
+.preamble,.main div{
+	height:500px;
+	position:relative;
+}
+@media screen and (max-width:1080px){
+  .preamble{
+  & p{
+    margin-right:10px;
+  }
+  }
+}
+@media screen and (max-width:699px){
+  .preamble{
+  & p{
+    font-size: 1.2em;
+  }
+  }
+}
+@media screen and (max-width:571px){
+  #zen-preamble p{
+    font-size: 1.1em;
+    position: relative;
+    top:225px;
+  }
+  & h3{
+    top:15px;
+  }
+}
+@media screen and (max-width:380px){
+  .preamble{
+
+  }
+  & p{
+    margin-left:10px;
+  }
+}

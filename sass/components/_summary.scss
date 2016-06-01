@@ -1,0 +1,63 @@
+/* CSSZENGARDEN
+*
+* /sass/components/summary.scss - Design of the Summary Section
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+
+.summary{
+  background-color: $summaryBckg;
+  & p:first-child{
+    color:white;
+    width:30em;
+    margin:auto;
+  }
+  & p:last-child{
+    padding:1em 0 1em 0;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  & a {
+  background-color:$summaryBckg;
+	border-radius: 1em;
+	padding:0.5em;
+	color:white;
+	text-decoration: none;
+	transition:0.5s ease-in-out;
+
+  &:hover{
+    background-color:white;
+	  color:#2C3434;
+  }
+  }
+}
+
+@media screen and (max-width:942px){
+  .summary{
+    & p:first-child{
+      width:30em;
+      text-align: center;
+    }
+    & p:last-child{
+      width:30em;
+    }
+  }
+}
+@media screen and (max-width:510px){
+  .summary{
+    & p:first-child{
+      font-size: 1.2em;
+      width:25em;
+    }
+    & p:last-child{
+      font-size: 1.2em;
+      width:25.5em;
+    }
+    & a{
+      margin:0;
+      padding:0;
+    }
+  }
+}

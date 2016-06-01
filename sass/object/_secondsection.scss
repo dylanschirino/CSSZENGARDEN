@@ -1,0 +1,41 @@
+/* CSSZENGARDEN
+*
+* /sass/object/firstsection.scss - NON Design of the Second Section WHAT'S ABOUT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.explanation{
+  & p{
+      margin-left:10em;
+  }
+  & h3{
+    width:8em;
+    position:absolute;
+    right:168px;
+    bottom:40px;
+  }
+}
+@media screen and (max-width:1080px){
+  .explanation{
+  & p{
+    margin-left:10px;
+  }
+  }
+}
+@media screen and (max-width:797px){
+  .explanation{
+  & p{
+    font-size: 1.2em;
+  }
+}
+}
+@media screen and (max-width:554px){
+  .explanation{
+		& p{
+      font-size: 1em;
+      position: relative;
+      top:180px;
+    }
+		}
+}

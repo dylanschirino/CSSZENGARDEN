@@ -1,0 +1,52 @@
+/* CSSZENGARDEN
+*
+* /sass/object/thirdsection.scss -  NON Design of the Third Section PARTICIPATION
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.participation{
+  & p{
+      margin-right:10em;
+  }
+  & h3{
+    width:8em;
+    position:absolute;
+    left:148px;
+    bottom:60px;
+  }
+}
+@media screen and (max-width:1080px){
+  .participation{
+  & p{
+    margin-right:10px;
+  }
+  }
+}
+@media screen and (max-width:699px){
+  .participation{
+  & p{
+    font-size: 1.2em;
+  }
+  }
+}
+@media screen and (max-width:571px){
+  .participation {
+  & p{
+    font-size: 1.1em;
+    position: relative;
+    top:150px;
+  }
+  & h3{
+    top:15px;
+  }
+}
+}
+@media screen and (max-width:380px){
+  .participation{
+
+  & p{
+    margin-left:10px;
+  }
+}
+}

@@ -1,0 +1,51 @@
+/* CSSZENGARDEN
+*
+* /sass/components/thirdsection.scss -  Design of the Third Section PARTICIPATION
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.participation{
+	background: url("../image/Girafe.svg")no-repeat 328px 41px,$participationBckg;
+	background-size:15em;
+	&:hover{
+		background: url("../image/GirafeHover.svg")no-repeat 328px 41px,$participationBckg;
+		background-size:15em;
+	}
+	& p{
+		color:white;
+		line-height: 1.5em;
+	}
+}
+@media screen and (max-width:1080px){
+  .participation{
+    background-position: 10px 41px;
+    &:hover{
+      background-position: 10px 41px;
+    }
+		& h3{
+			font-size: 2.5em;
+			margin-left: -5em;
+		}
+  }
+}
+@media screen and (max-width:699px){
+  .participation{
+    background-size: 15em;
+    &:hover{
+      background-size: 15em;
+    }
+}
+}
+@media screen and (max-width:430px){
+  .participation{
+    background-size: 6em;
+    &:hover{
+      background-size: 6em;
+    }
+  }
+  & h3{
+    font-size: 2.5em;
+    margin-left: -5em;
+  }
+}

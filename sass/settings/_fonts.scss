@@ -1,0 +1,52 @@
+/* CSSZENGARDEN
+ *
+ * /sass/settings/fonts.scss - Fonts stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+ @font-face {
+     font-family: 'trackregular';
+     src: url('../font/track/track-webfont.eot');
+     src: url('../font/track/track-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../font/track/track-webfont.woff2') format('woff2'),
+          url('../font/track/track-webfont.woff') format('woff'),
+          url('../font/track/track-webfont.ttf') format('truetype'),
+          url('../font/track/track-webfont.svg#trackregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+ @font-face {
+     font-family: 'trackregular';
+     src: url('../font/track/track-webfont.eot');
+     src: url('../font/track/track-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../font/track/track-webfont.woff2') format('woff2'),
+          url('../font/track/track-webfont.woff') format('woff'),
+          url('../font/track/track-webfont.ttf') format('truetype'),
+          url('../font/track/track-webfont.svg#trackregular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+
+ }
+
+
+
+ @font-face {
+    font-family: 'chunkfiveroman';
+    src: url('../font/chuck/chunkfive-webfont.eot');
+    src: url('../font/chuck/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/chuck/chunkfive-webfont.woff2') format('woff2'),
+         url('../font/chuck/chunkfive-webfont.woff') format('woff'),
+         url('../font/chuck/chunkfive-webfont.ttf') format('truetype'),
+         url('../font/chuck/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$TrackRegularStack:"trackregular",Arial;
+$chunckFiveStack:"chunkfiveroman",Arial;
+
+$avenirStack:"avenir light",'avenir',helvetica, arial, sans-serif;

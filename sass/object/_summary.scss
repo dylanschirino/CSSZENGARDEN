@@ -1,0 +1,18 @@
+/* CSSZENGARDEN
+ *
+ * /sass/object/summary.scss - NON Design of the Summary Section
+ *
+ * coded by Dylan Schirino
+ * started at 04/04/2016
+ */
+ .summary{
+   & a {
+     margin-left:.5em;
+	   margin-right: .5em;
+   }
+     & p:first-child{
+       padding-top: 10px;
+       width:30em;
+       margin:auto;
+     }
+ }

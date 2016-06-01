@@ -1,0 +1,54 @@
+/* CSSZENGARDEN
+*
+* /sass/object/fifthsection.scss -  NON Design of the Fourth Section REQUIREMENTS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.requirements{
+  & p{
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-right:12.5em;
+  }
+  & h3{
+    width:6em;
+    position:absolute;
+    left:148px;
+    bottom:60px;
+  }
+}
+@media screen and (max-width:1080px){
+  .requirements{
+    & p{
+      margin-right:10px;
+    }
+  }
+}
+@media screen and (max-width:699px){
+  .requirements{
+    & p{
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width:571px){
+  .requirements {
+    & p{
+      font-size: 1.1em;
+      position: relative;
+      top:170px;
+    }
+    & h3{
+      top:15px;
+    }
+  }
+}
+@media screen and (max-width:380px){
+  .requirements{
+
+  }
+  & p{
+    margin-left:10px;
+  }
+}

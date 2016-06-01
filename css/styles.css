@@ -1,0 +1,760 @@
+/* CSSZENGARDEN
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+/* CSSZENGARDEN
+ *
+ * /sass/settings/fonts.scss - Fonts stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+@font-face {
+  font-family: 'trackregular';
+  src: url("../font/track/track-webfont.eot");
+  src: url("../font/track/track-webfont.eot?#iefix") format("embedded-opentype"), url("../font/track/track-webfont.woff2") format("woff2"), url("../font/track/track-webfont.woff") format("woff"), url("../font/track/track-webfont.ttf") format("truetype"), url("../font/track/track-webfont.svg#trackregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'trackregular';
+  src: url("../font/track/track-webfont.eot");
+  src: url("../font/track/track-webfont.eot?#iefix") format("embedded-opentype"), url("../font/track/track-webfont.woff2") format("woff2"), url("../font/track/track-webfont.woff") format("woff"), url("../font/track/track-webfont.ttf") format("truetype"), url("../font/track/track-webfont.svg#trackregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'chunkfiveroman';
+  src: url("../font/chuck/chunkfive-webfont.eot");
+  src: url("../font/chuck/chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("../font/chuck/chunkfive-webfont.woff2") format("woff2"), url("../font/chuck/chunkfive-webfont.woff") format("woff"), url("../font/chuck/chunkfive-webfont.ttf") format("truetype"), url("../font/chuck/chunkfive-webfont.svg#chunkfiveroman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Fin du reset de meyer*/
+/* CSSZENGARDEN
+ *
+ * /sass/base/root.scss - ROOT stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+html {
+  font-size: 62.5%; }
+
+p {
+  font-family: "avenir light",'avenir',helvetica, arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em; }
+
+a {
+  font-family: "avenir light",'avenir',helvetica, arial, sans-serif;
+  color: white;
+  text-decoration: underline;
+  transition: .5s ease-in-out; }
+
+aside a, aside h3 {
+  font-size: 1.5em; }
+
+/* Le bloc de contenu est centrer avec 940px de largeur*/
+.main p, .preamble p {
+  display: block;
+  width: 25em;
+  padding-top: 1em;
+  line-height: 1.6em;
+  margin: auto; }
+
+/* CSSZENGARDEN
+ *
+ * /sass/components/header.scss - Design of the header
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+header {
+  min-height: 500px; }
+
+/* CSSZENGARDEN
+ *
+ * /sass/object/summary.scss - NON Design of the Summary Section
+ *
+ * coded by Dylan Schirino
+ * started at 04/04/2016
+ */
+.summary a {
+  margin-left: .5em;
+  margin-right: .5em; }
+
+.summary p:first-child {
+  padding-top: 10px;
+  width: 30em;
+  margin: auto; }
+
+/* CSSZENGARDEN
+*
+* /sass/object/firstsection.scss - NON Design of the First Section THE ROAD TO ENLIGHTMENT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.preamble p {
+  margin-right: 10em; }
+
+.preamble h3 {
+  position: absolute;
+  left: 148px;
+  bottom: 60px;
+  width: 1.5em; }
+
+.preamble, .main div {
+  height: 500px;
+  position: relative; }
+
+@media screen and (max-width: 1080px) {
+  .preamble p {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 699px) {
+  .preamble p {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 571px) {
+  #zen-preamble p {
+    font-size: 1.1em;
+    position: relative;
+    top: 225px; }
+  h3 {
+    top: 15px; } }
+
+@media screen and (max-width: 380px) {
+  p {
+    margin-left: 10px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/object/firstsection.scss - NON Design of the Second Section WHAT'S ABOUT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.explanation p {
+  margin-left: 10em; }
+
+.explanation h3 {
+  width: 8em;
+  position: absolute;
+  right: 168px;
+  bottom: 40px; }
+
+@media screen and (max-width: 1080px) {
+  .explanation p {
+    margin-left: 10px; } }
+
+@media screen and (max-width: 797px) {
+  .explanation p {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 554px) {
+  .explanation p {
+    font-size: 1em;
+    position: relative;
+    top: 180px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/object/thirdsection.scss -  NON Design of the Third Section PARTICIPATION
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.participation p {
+  margin-right: 10em; }
+
+.participation h3 {
+  width: 8em;
+  position: absolute;
+  left: 148px;
+  bottom: 60px; }
+
+@media screen and (max-width: 1080px) {
+  .participation p {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 699px) {
+  .participation p {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 571px) {
+  .participation p {
+    font-size: 1.1em;
+    position: relative;
+    top: 150px; }
+  .participation h3 {
+    top: 15px; } }
+
+@media screen and (max-width: 380px) {
+  .participation p {
+    margin-left: 10px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/object/fourthsection.scss -  NON Design of the Fourth Section BENEFITS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.benefits p {
+  margin-left: 10em;
+  padding-top: 10em; }
+
+.benefits h3 {
+  width: 8em;
+  position: absolute;
+  left: 148px;
+  bottom: 60px; }
+
+@media screen and (max-width: 1080px) {
+  .benefits p {
+    margin-left: 10px; } }
+
+@media screen and (max-width: 797px) {
+  .benefits p {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 554px) {
+  .benefits p {
+    font-size: 1em;
+    position: relative;
+    top: 180px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/object/fifthsection.scss -  NON Design of the Fourth Section REQUIREMENTS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.requirements p {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  margin-right: 12.5em; }
+
+.requirements h3 {
+  width: 6em;
+  position: absolute;
+  left: 148px;
+  bottom: 60px; }
+
+@media screen and (max-width: 1080px) {
+  .requirements p {
+    margin-right: 10px; } }
+
+@media screen and (max-width: 699px) {
+  .requirements p {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 571px) {
+  .requirements p {
+    font-size: 1.1em;
+    position: relative;
+    top: 170px; }
+  .requirements h3 {
+    top: 15px; } }
+
+@media screen and (max-width: 380px) {
+  p {
+    margin-left: 10px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/object/fakefooter.scss -  NON Design of the Fake footer Section contentinfo last paragraph
+*
+* coded by Dylan Schirino
+* started at 05/04/2016
+*/
+p[role="contentinfo"] {
+  display: block;
+  margin-top: 4em; }
+
+footer a {
+  display: inline-block;
+  margin-left: 1em;
+  width: 5em;
+  height: 5em; }
+  footer a:first-child {
+    margin-left: 15.5em; }
+
+aside {
+  background: url("../image/LionHover.svg") no-repeat 164px 231px, #3e3e40;
+  background-size: 50em; }
+
+@media screen and (max-width: 664px) {
+  aside {
+    background-size: 30em; } }
+
+@media screen and (max-width: 694px) {
+  p[role="contentinfo"] {
+    margin-top: 13.5em; } }
+
+@media screen and (max-width: 694px) {
+  p[role="contentinfo"] {
+    margin-top: 1.5em; } }
+
+@media screen and (max-width: 561px) {
+  p[role="contentinfo"] {
+    margin-top: 1.5em; }
+  footer a {
+    height: 3em;
+    width: 3em; } }
+
+@media screen and (max-width: 495px) {
+  footer a {
+    margin-top: 4em; } }
+
+@media screen and (max-width: 831px) {
+  footer a:first-child {
+    margin-left: 4.5em; } }
+
+.wrapper {
+  display: table;
+  width: 50em;
+  margin: auto;
+  table-layout: fixed; }
+  .wrapper ul {
+    margin-top: 3em; }
+  .wrapper h3 {
+    display: none; }
+
+@media screen and (max-width: 504px) {
+  .wrapper {
+    width: 100%; } }
+
+@media screen and (max-width: 504px) and (max-width: 1067px) {
+  aside {
+    background-size: 0; } }
+
+/* CSSZENGARDEN
+ *
+ * /sass/components/header.scss - Design of the header
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+header {
+  font-family: "trackregular", Arial;
+  background: url("../image/Lion.svg") no-repeat 164px 231px, #334d5c;
+  transition: background 1s ease-in-out;
+  background-size: 50rem; }
+  header:hover {
+    background: url("../image/LionHover.svg") no-repeat 164px 231px, #334d5c;
+    background-size: 50em; }
+  header h1 {
+    padding-top: 30px;
+    font-size: 9.5em;
+    color: white;
+    padding-bottom: 30px;
+    text-shadow: 0px 1px 3px black;
+    text-align: center; }
+  header h2 {
+    font-size: 5em;
+    color: #efc94c;
+    text-align: center; }
+
+@media screen and (max-width: 853px) {
+  header {
+    background-position: 10px 231px; }
+    header:hover {
+      background-position: 10px 231px; }
+    header h1 {
+      font-size: 5em;
+      padding-left: 10px; } }
+
+@media screen and (max-width: 511px) {
+  header {
+    background-position: 10px 338px;
+    background-size: 30em; }
+    header:hover {
+      background-position: 10px 338px;
+      background-size: 30em; } }
+
+@media screen and (max-width: 430px) {
+  header h1 {
+    font-size: 3em;
+    padding-left: 20px; } }
+
+@media screen and (max-width: 753px) {
+  header h2 {
+    font-size: 3em;
+    padding-left: 20px; } }
+
+@media screen and (max-width: 430px) {
+  header h2 {
+    font-size: 1.5em;
+    padding-left: 20px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/summary.scss - Design of the Summary Section
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.summary {
+  background-color: #2c3434; }
+  .summary p:first-child {
+    color: white;
+    width: 30em;
+    margin: auto; }
+  .summary p:last-child {
+    padding: 1em 0 1em 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center; }
+  .summary a {
+    background-color: #2c3434;
+    border-radius: 1em;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out; }
+    .summary a:hover {
+      background-color: white;
+      color: #2C3434; }
+
+@media screen and (max-width: 942px) {
+  .summary p:first-child {
+    width: 30em;
+    text-align: center; }
+  .summary p:last-child {
+    width: 30em; } }
+
+@media screen and (max-width: 510px) {
+  .summary p:first-child {
+    font-size: 1.2em;
+    width: 25em; }
+  .summary p:last-child {
+    font-size: 1.2em;
+    width: 25.5em; }
+  .summary a {
+    margin: 0;
+    padding: 0; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/firstsection.scss - Design of the First Section THE ROAD TO ENLIGHTMENT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.preamble {
+  background: url("../image/Elephant.svg") no-repeat 254px 41px, #45b29d;
+  background-size: 30em; }
+  .preamble:hover {
+    background: url("../image/ElephantHover.svg") no-repeat 254px 41px, #45b29d;
+    background-size: 30em; }
+  .preamble p {
+    line-height: 1.6em;
+    color: white; }
+
+/*Positionnement des titres*/
+.main h3, h3 {
+  text-align: center;
+  font: 4.55em "chunkfiveroman", Arial;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white; }
+
+@media screen and (max-width: 1080px) {
+  .preamble {
+    background-position: 10px 41px; }
+    .preamble:hover {
+      background-position: 10px 41px; } }
+
+@media screen and (max-width: 699px) {
+  .preamble {
+    background-size: 25em; }
+    .preamble:hover {
+      background-size: 25em; }
+    .preamble h3 {
+      font-size: 2.5em; } }
+
+@media screen and (max-width: 430px) {
+  .preamble {
+    background-size: 20em; }
+    .preamble:hover {
+      background-size: 20em; }
+  h3 {
+    font-size: 2.5em;
+    margin-left: -5em; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/firstsection.scss -  Design of the Second Section WHAT'S ABOUT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.explanation {
+  background: url("../image/Chat.svg") no-repeat 738px 41px, #df5a49;
+  background-size: 40em; }
+  .explanation:hover {
+    background: url("../image/ChatHover.svg") no-repeat 738px 41px, #df5a49;
+    background-size: 40em; }
+
+@media screen and (max-width: 1080px) {
+  .explanation {
+    background-position: 400px 41px; }
+    .explanation:hover {
+      background-position: 400px 41px; } }
+
+@media screen and (max-width: 797px) {
+  .explanation {
+    background-size: 25em; }
+    .explanation:hover {
+      background-size: 25em; }
+    .explanation h3 {
+      font-size: 3.5em; } }
+
+@media screen and (max-width: 645px) {
+  .explanation {
+    background-position: 300px 41px; }
+    .explanation:hover {
+      background-position: 300px 41px; } }
+
+@media screen and (max-width: 554px) {
+  .explanation {
+    background-position: 10px 41px; }
+    .explanation:hover {
+      background-position: 10px 41px; }
+    .explanation h3 {
+      font-size: 2.5em;
+      letter-spacing: 0px;
+      position: relative;
+      left: 120px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/thirdsection.scss -  Design of the Third Section PARTICIPATION
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.participation {
+  background: url("../image/Girafe.svg") no-repeat 328px 41px, #8359AA;
+  background-size: 15em; }
+  .participation:hover {
+    background: url("../image/GirafeHover.svg") no-repeat 328px 41px, #8359AA;
+    background-size: 15em; }
+  .participation p {
+    color: white;
+    line-height: 1.5em; }
+
+@media screen and (max-width: 1080px) {
+  .participation {
+    background-position: 10px 41px; }
+    .participation:hover {
+      background-position: 10px 41px; }
+    .participation h3 {
+      font-size: 2.5em;
+      margin-left: -5em; } }
+
+@media screen and (max-width: 699px) {
+  .participation {
+    background-size: 15em; }
+    .participation:hover {
+      background-size: 15em; } }
+
+@media screen and (max-width: 430px) {
+  .participation {
+    background-size: 6em; }
+    .participation:hover {
+      background-size: 6em; }
+  h3 {
+    font-size: 2.5em;
+    margin-left: -5em; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/fourthsection.scss -  Design of the Fourth Section BENEFITS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.benefits {
+  background: url("../image/Hiboux.svg") no-repeat 738px 41px, #e27a3f;
+  background-size: 30em; }
+  .benefits:hover {
+    background: url("../image/HibouxHover.svg") no-repeat 738px 41px, #e27a3f;
+    background-size: 30em; }
+  .benefits p {
+    line-height: 1.6em; }
+
+@media screen and (max-width: 1080px) {
+  .benefits {
+    background-position: 400px 41px; }
+    .benefits:hover {
+      background-position: 400px 41px; } }
+
+@media screen and (max-width: 797px) {
+  .benefits {
+    background-size: 25em; }
+    .benefits:hover {
+      background-size: 25em; }
+    .benefits h3 {
+      font-size: 3.5em; } }
+
+@media screen and (max-width: 645px) {
+  .benefits {
+    background-position: 300px 41px; }
+    .benefits:hover {
+      background-position: 300px 41px; } }
+
+@media screen and (max-width: 554px) {
+  .benefits {
+    background-position: 10px 41px;
+    background-size: 20em; }
+    .benefits:hover {
+      background-position: 10px 41px;
+      background-size: 20em; }
+    .benefits h3 {
+      font-size: 2.5em;
+      letter-spacing: 0px;
+      position: relative;
+      left: 120px; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/fifthsection.scss -  Design of the Fourth Section REQUIREMENTS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.requirements {
+  background: url("../image/Koala.svg") no-repeat 252px 41px, #3E83B4;
+  background-size: 30em;
+  padding-bottom: 18em; }
+  .requirements:hover {
+    background: url("../image/KoalaHover.svg") no-repeat 252px 41px, #3E83B4;
+    background-size: 30em; }
+  .requirements p {
+    color: white; }
+
+@media screen and (max-width: 1080px) {
+  .requirements {
+    background-position: 10px 41px; }
+    .requirements:hover {
+      background-position: 10px 41px; } }
+
+@media screen and (max-width: 699px) {
+  .requirements {
+    background-size: 25em; }
+    .requirements:hover {
+      background-size: 25em; }
+    .requirements h3 {
+      font-size: 2.5em; } }
+
+@media screen and (max-width: 430px) {
+  .requirements {
+    background-size: 10em; }
+    .requirements:hover {
+      background-size: 10em; }
+  h3 {
+    font-size: 2.5em;
+    margin-left: -5em; } }
+
+/* CSSZENGARDEN
+*
+* /sass/components/fakefooter.scss -  Design of the Fake footer Section contentinfo last paragraph
+*
+* coded by Dylan Schirino
+* started at 05/04/2016
+*/
+p[role="contentinfo"] {
+  color: black; }
+
+footer {
+  background-color: #a52934;
+  padding: 1em; }
+  footer a {
+    color: white;
+    text-decoration: none;
+    border-radius: 5em;
+    text-align: center;
+    line-height: 5em; }
+    footer a:first-child {
+      background-color: #df5a49; }
+    footer a:nth-child(2) {
+      background-color: #45b29d; }
+    footer a:nth-child(3) {
+      background-color: #efc94c; }
+    footer a:nth-child(4) {
+      background-color: #2c3434; }
+    footer a:nth-child(5) {
+      background-color: #e27a3f; }
+    footer a:hover {
+      transform: rotate(-15deg); }
+
+@media screen and (max-width: 561px) {
+  footer a {
+    line-height: 3em; } }
+
+.wrapper li {
+  padding: 1em;
+  text-align: center;
+  border-top: 1px solid white;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(51, 77, 92, 0);
+  transition: 0.5s cubic-bezier(0, 1.02, 0.92, 0.57); }
+  .wrapper li:hover {
+    transform: scale(1.1);
+    background-color: #334d5c; }
+  .wrapper li a {
+    text-decoration: none; }
+
+/*# sourceMappingURL=styles.css.map */

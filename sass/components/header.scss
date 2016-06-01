@@ -1,0 +1,82 @@
+/* CSSZENGARDEN
+ *
+ * /sass/components/header.scss - Design of the header
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+
+
+header{
+	font-family: $TrackRegularStack;
+	background:url("../image/Lion.svg")no-repeat 164px 231px,#334d5c;
+	transition: background 1s ease-in-out;
+	background-size:50rem;
+	&:hover{
+	background:url("../image/LionHover.svg")no-repeat 164px 231px ,#334d5c;
+	background-size:50em;
+}
+  & h1{
+  	padding-top: 30px;
+  	font-size: 9.5em;
+  	color:white;
+  	padding-bottom:30px;
+		text-shadow: 0px 1px 3px black;
+		text-align: center;
+  }
+	& h2{
+		font-size: 5em;
+		color:$mainSubTitleColor;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:853px) {
+  header{
+		background-position: 10px 231px;
+		&:hover{
+			background-position: 10px 231px;
+		}
+    & h1{
+				font-size: 5em;
+				padding-left: 10px;
+    }
+  }
+}
+@media screen and (max-width:511px) {
+  header{
+		background-position: 10px 338px;
+		background-size: 30em;
+		&:hover{
+			background-position: 10px 338px;
+			background-size: 30em;
+		}
+  }
+}
+@media screen and (max-width:430px) {
+  header{
+    & h1{
+				font-size: 3em;
+				padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:753px) {
+  header{
+    & h2{
+				font-size: 3em;
+				padding-left: 20px;
+    }
+  }
+
+}
+@media screen and (max-width:430px) {
+  header{
+    & h2{
+				font-size: 1.5em;
+				padding-left: 20px;
+    }
+  }
+
+}

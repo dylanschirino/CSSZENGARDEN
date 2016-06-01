@@ -1,0 +1,59 @@
+/* CSSZENGARDEN
+*
+* /sass/components/firstsection.scss - Design of the First Section THE ROAD TO ENLIGHTMENT
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+
+.preamble{
+  background: url("../image/Elephant.svg")no-repeat 254px 41px,#45b29d;
+	background-size:30em;
+  &:hover{
+  background: url("../image/ElephantHover.svg")no-repeat 254px 41px,#45b29d;
+	background-size:30em;
+  }
+  & p{
+    line-height: 1.6em;
+    color:white;
+  }
+}
+/*Positionnement des titres*/
+.main h3,h3{
+text-align: center;
+font:4.55em $chunckFiveStack;
+text-transform: uppercase;
+letter-spacing: 3px;
+color:white;
+}
+@media screen and (max-width:1080px){
+  .preamble{
+    background-position: 10px 41px;
+    &:hover{
+      background-position: 10px 41px;
+    }
+  }
+}
+@media screen and (max-width:699px){
+  .preamble{
+    background-size: 25em;
+    &:hover{
+      background-size: 25em;
+    }
+  & h3{
+    font-size: 2.5em;
+  }
+}
+}
+@media screen and (max-width:430px){
+  .preamble{
+    background-size: 20em;
+    &:hover{
+      background-size: 20em;
+    }
+  }
+  & h3{
+    font-size: 2.5em;
+    margin-left: -5em;
+  }
+}

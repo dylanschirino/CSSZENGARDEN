@@ -1,0 +1,35 @@
+/* CSSZENGARDEN
+ *
+ * /sass/base/root.scss - ROOT stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 02/03/2016
+ */
+
+
+html{
+	font-size: 62.5%;
+}
+
+p{
+	font-family: "avenir light",'avenir',helvetica, arial, sans-serif;
+	font-size:1.5em;
+	line-height: 1.2em;
+}
+a{
+	font-family: "avenir light",'avenir',helvetica, arial, sans-serif;
+	color:white;
+	text-decoration:underline;
+	transition:.5s ease-in-out
+}
+aside a,aside h3 {
+	font-size: 1.5em;
+}
+/* Le bloc de contenu est centrer avec 940px de largeur*/
+.main p, .preamble p{
+	display:block;
+	width:25em;
+	padding-top: 1em;
+	line-height: 1.6em;
+	margin: auto;
+}

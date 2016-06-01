@@ -1,0 +1,88 @@
+/* CSSZENGARDEN
+*
+* /sass/object/fakefooter.scss -  NON Design of the Fake footer Section contentinfo last paragraph
+*
+* coded by Dylan Schirino
+* started at 05/04/2016
+*/
+p[role="contentinfo"]{
+  display:block;
+  margin-top: 4em;
+}
+footer{
+  & a {
+    display:inline-block;
+    margin-left:1em;
+    width:5em;
+    height:5em;
+    &:first-child{
+      margin-left:15.5em;
+    }
+  }
+}
+aside{
+  background:url("../image/LionHover.svg")no-repeat 164px 231px ,#3e3e40;
+  background-size:50em;
+}
+@media screen and (max-width:664px){
+  aside{
+    background-size: 30em;
+  }
+}
+@media screen and (max-width:694px){
+  p[role="contentinfo"]{
+    margin-top: 13.5em;
+  }
+}
+@media screen and (max-width:694px){
+  p[role="contentinfo"]{
+    margin-top: 1.5em;
+  }
+}
+@media screen and (max-width:561px){
+  p[role="contentinfo"]{
+    margin-top: 1.5em;
+  }
+  footer{
+    & a {
+      height:3em;
+      width:3em;
+    }
+  }
+}
+@media screen and (max-width:495px){
+  footer{
+    & a {
+      margin-top: 4em;
+    }
+  }
+}
+@media screen and (max-width:831px){
+  footer{
+    & a:first-child{
+      margin-left: 4.5em;
+    }
+  }
+}
+.wrapper{
+  display:table;
+  width:50em;
+  margin:auto;
+  table-layout: fixed;
+  & ul{
+    margin-top: 3em;
+  }
+  & h3{
+    display: none;
+  }
+}
+@media screen and (max-width:504px){
+  .wrapper{
+    width:100%;
+  }
+  @media screen and (max-width:1067px){
+    aside{
+      background-size: 0;
+    }
+  }
+}

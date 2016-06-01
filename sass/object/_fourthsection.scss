@@ -1,0 +1,42 @@
+/* CSSZENGARDEN
+*
+* /sass/object/fourthsection.scss -  NON Design of the Fourth Section BENEFITS
+*
+* coded by Dylan Schirino
+* started at 04/04/2016
+*/
+.benefits{
+  & p{
+      margin-left:10em;
+      padding-top: 10em;
+  }
+  & h3{
+    width:8em;
+    position:absolute;
+    left:148px;
+    bottom:60px;
+  }
+}
+@media screen and (max-width:1080px){
+  .benefits{
+  & p{
+    margin-left:10px;
+  }
+  }
+}
+@media screen and (max-width:797px){
+  .benefits{
+  & p{
+    font-size: 1.2em;
+  }
+}
+}
+@media screen and (max-width:554px){
+  .benefits{
+		& p{
+      font-size: 1em;
+      position: relative;
+      top:180px;
+    }
+		}
+}

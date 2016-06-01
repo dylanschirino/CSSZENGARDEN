@@ -1,0 +1,65 @@
+/* CSSZENGARDEN
+*
+* /sass/components/fakefooter.scss -  Design of the Fake footer Section contentinfo last paragraph
+*
+* coded by Dylan Schirino
+* started at 05/04/2016
+*/
+p[role="contentinfo"]{
+  color:black;
+}
+footer{
+  background-color:$footerBckg;
+  padding:1em;
+  & a{
+    color:white;
+    text-decoration: none;
+    border-radius:5em;
+    text-align: center;
+    line-height: 5em;
+    &:first-child{
+      background-color:$explanationBckg;
+    }
+    &:nth-child(2){
+      background-color:$preambleBckg;
+    }
+    &:nth-child(3){
+      background-color:$mainSubTitleColor;
+    }
+    &:nth-child(4){
+      background-color:$summaryBckg;
+    }
+    &:nth-child(5){
+      background-color:$benefitsBckg;
+    }
+    &:hover{
+      transform: rotate(-15deg);
+    }
+  }
+}
+@media screen and (max-width:561px){
+  footer{
+    & a{
+      line-height: 3em;
+    }
+  }
+}
+.wrapper{
+  & li{
+    	padding:1em;
+    	text-align: center;
+    	border-top:1px solid white;
+    	text-transform: uppercase;
+    	color:white;
+    	background-color:rgba(51, 77, 92, 0);
+    	transition:0.5s cubic-bezier(0,1.02,.92,.57);
+
+     &:hover{
+       transform:scale(1.1);
+    	 background-color:rgba(51, 77, 92, 1);
+     }
+     & a{
+       text-decoration: none;
+     }
+  }
+}
